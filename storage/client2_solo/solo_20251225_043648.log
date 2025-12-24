@@ -1,0 +1,59 @@
+SECTION 1: PROBLEM ANALYSIS  
+The crop leaf exhibits **brown spots, yellowing, and chlorotic margins**, indicative of potential **fungal infection (e.g., leaf spot, rust), bacterial blight, or nutrient deficiency (e.g., magnesium, potassium)**. The mottled discoloration and necrotic lesions suggest **abiotic stress** (e.g., overwatering, nutrient imbalance) or **pathogen attack**. Without environmental data, the exact cause is uncertain, but the symptoms align with **early-stage disease progression** or **physiological stress**.  
+
+SECTION 2: ALL POSSIBLE SOLUTIONS  
+1. **Fungal/Bacterial Disease Management**:  
+   - Apply **copper-based fungicides** or **biocontrol agents** (e.g., *Bacillus subtilis*).  
+   - Remove and destroy infected plant debris to reduce pathogen load.  
+   - Improve air circulation via pruning or spacing adjustments.  
+
+2. **Nutrient Deficiency Correction**:  
+   - Conduct a **soil test** to identify specific deficiencies.  
+   - Supplement with **balanced fertilizers** (e.g., magnesium sulfate for chlorosis).  
+
+3. **Water Management**:  
+   - Adjust irrigation to avoid waterlogging (root rot risk) or drought stress.  
+   - Mulch to retain soil moisture and regulate temperature.  
+
+4. **Pest Control**:  
+   - Inspect for pests (e.g., aphids, mites) and apply **neem oil** or **insecticidal soap** if present.  
+
+5. **Cultural Practices**:  
+   - Rotate crops to break disease cycles.  
+   - Use disease-resistant cultivars in future plantings.  
+
+6. **Environmental Adjustments**:  
+   - Shield plants from extreme temperatures or UV stress with shade cloth.  
+
+7. **Chemical Burn Mitigation**:  
+   - If chemical injury is suspected, flush soil with water and avoid over-application of fertilizers/pesticides.  
+
+**Note**: Prioritize lab testing for pathogen identification
+
+FINAL MULTI-AGENT TASK PLAN
+
+CLIENT1 (perception):
+ - **Cultural Practices**:
+ - Use disease-resistant cultivars in future plantings.
+
+CLIENT2 (planner):
+ - **Fungal/Bacterial Disease Management**:
+ - Apply **copper-based fungicides** or **biocontrol agents** (e.g., *Bacillus subtilis*).
+ - Remove and destroy infected plant debris to reduce pathogen load.
+ - Improve air circulation via pruning or spacing adjustments.
+ - **Nutrient Deficiency Correction**:
+ - **Water Management**:
+ - **Pest Control**:
+ - Inspect for pests (e.g., aphids, mites) and apply **neem oil** or **insecticidal soap** if present.
+ - Rotate crops to break disease cycles.
+ - Shield plants from extreme temperatures or UV stress with shade cloth.
+ - If chemical injury is suspected, flush soil with water and avoid over-application of fertilizers/pesticides.
+
+CLIENT3 (executor):
+ - Conduct a **soil test** to identify specific deficiencies.
+ - Supplement with **balanced fertilizers** (e.g., magnesium sulfate for chlorosis).
+ - Adjust irrigation to avoid waterlogging (root rot risk) or drought stress.
+ - Mulch to retain soil moisture and regulate temperature.
+ - **Environmental Adjustments**:
+ - **Chemical Burn Mitigation**:
+
