@@ -1,5 +1,5 @@
 # =========================================================
-# client2.py  (FINAL – ARCHITECTURE CONSISTENT)
+# client2.py  
 # ROLE:
 #   SOLO MODE:
 #     Problem Analysis + ALL Solutions (LLM only)

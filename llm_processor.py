@@ -9,31 +9,23 @@ import logging
 import requests
 from dotenv import load_dotenv
 
-# ---------------------------------------------------------
-# LOAD .env FILE
-# ---------------------------------------------------------
+
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 if not OPENROUTER_API_KEY:
     raise RuntimeError("OPENROUTER_API_KEY not found in .env file")
 
-# ---------------------------------------------------------
-# LOGGING CONFIG
-# ---------------------------------------------------------
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)-8s | %(message)s"
 )
 
-# ---------------------------------------------------------
-# OPENROUTER CONFIG
-# ---------------------------------------------------------
+
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
-# ---------------------------------------------------------
-# MAIN LLM FUNCTION
-# ---------------------------------------------------------
+
 def analyze_image_and_text(
     base64_image=None,
     user_text="",
@@ -41,20 +33,14 @@ def analyze_image_and_text(
     mime_type=None,
     model_override=None
 ):
-    """
-    Unified LLM interface:
-      - Text → Text
-      - Image + Text → Text (Multimodal)
-    """
+
 
     model_name = model_override
     if not model_name:
         raise ValueError("model_override must be provided")
 
     try:
-        # -----------------------------
-        # BUILD MESSAGE CONTENT
-        # -----------------------------
+
         content = [
             {
                 "type": "text",

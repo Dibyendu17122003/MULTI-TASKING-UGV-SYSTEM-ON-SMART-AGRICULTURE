@@ -1,8 +1,3 @@
-# =========================================================
-# server.py  (FINAL – FIXED & RELIABLE)
-# Central Message Router with Buffering
-# =========================================================
-
 import socket
 import threading
 import json
@@ -14,30 +9,21 @@ from collections import defaultdict, deque
 
 from config import SERVER_HOST, SERVER_PORT
 
-# =================================================
-# CONSTANTS
-# =================================================
+
 HEADER_LEN_SIZE = 4
 STORAGE_DIR = "storage"
 
-# =================================================
-# LOGGING
-# =================================================
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)-8s | %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S"
 )
 
-# =================================================
-# CLIENT REGISTRY & MESSAGE BUFFERS
-# =================================================
-clients = {}                          # client_id -> socket
-message_queue = defaultdict(deque)   # client_id -> queued packets
 
-# =================================================
-# SOCKET UTILITIES
-# =================================================
+clients = {}                          
+message_queue = defaultdict(deque)   
+
 def recv_all(sock, n):
     data = bytearray()
     while len(data) < n:
@@ -50,9 +36,7 @@ def recv_all(sock, n):
 def send_packet(sock, packet):
     sock.sendall(packet)
 
-# =================================================
-# LOG STORAGE
-# =================================================
+
 def save_log(sender, receiver, content):
     log_dir = os.path.join(STORAGE_DIR, f"{sender}_to_{receiver}")
     os.makedirs(log_dir, exist_ok=True)
@@ -70,9 +54,7 @@ def save_log(sender, receiver, content):
 
     logging.info(f"[LOG SAVED] {path}")
 
-# =================================================
-# ROUTING LOGIC
-# =================================================
+
 def get_target(sender):
     if sender == "client1":
         return "client2"
