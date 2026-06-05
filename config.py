@@ -11,8 +11,6 @@ MAX_SOCKET_RETRIES = 3
 
 # NOTE:
 
-MODEL_CLIENT1 = "qwen/qwen-2.5-vl-7b-instruct"
-
+MODEL_CLIENT1 = "nvidia/nemotron-nano-12b-v2-vl:free"
 MODEL_CLIENT2 = "nvidia/nemotron-nano-12b-v2-vl:free"
-
-MODEL_CLIENT3 = "google/gemma-3-4b-it:free"
+MODEL_CLIENT3 = "nvidia/nemotron-nano-12b-v2-vl:free"
