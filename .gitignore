@@ -1,1 +1,16 @@
+# Images
+images/
+
+# Optional large generated files
+storage/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
 envugv/
+.venv/
+
+# Secrets
+.env
